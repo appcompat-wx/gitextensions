@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Project\ICSharpCode.TextEditor.csproj">
+      <Project>{2d18be89-d210-49eb-a9dd-2246fbb3df6d}</Project>
+      <Name>ICSharpCode.TextEditor</Name>
+    </ProjectReference>
+  </ItemGroup>
+
+</Project>

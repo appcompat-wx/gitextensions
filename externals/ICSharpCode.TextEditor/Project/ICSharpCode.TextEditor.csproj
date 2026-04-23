@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <DeterministicSourcePaths Condition="'$(EnableSourceLink)' == ''">false</DeterministicSourcePaths>
+    <SuppressNETCoreSdkPreviewMessage>true</SuppressNETCoreSdkPreviewMessage>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\*.xshd" />
+    <None Remove="Resources\Mode.xsd" />
+    <None Remove="Resources\RightArrow.cur" />
+    <None Remove="Resources\SyntaxModes.xml" />
+    <None Remove="Resources\TextEditorControl.bmp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\*.xshd" />
+    <EmbeddedResource Include="Resources\Mode.xsd" />
+    <EmbeddedResource Include="Resources\RightArrow.cur" />
+    <EmbeddedResource Include="Resources\SyntaxModes.xml" />
+    <EmbeddedResource Include="Resources\TextEditorControl.bmp" />
+  </ItemGroup>
+
+</Project>
